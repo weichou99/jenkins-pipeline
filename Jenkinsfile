@@ -6,6 +6,13 @@ pipeline {
         }
     }
     stages {
+	    stage('Info') {
+
+            steps {
+                sh "echo $HOME"
+				sh "pwd"
+            }
+        }
         stage('Build') {
 
             steps {
